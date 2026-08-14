@@ -1,0 +1,33 @@
+.section-share-thoughts {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 64px;
+
+    .container-share-thoughts {
+        background-color: #fdfeff;
+        width: 595px;
+        height: 242px;
+        border-radius: 16px;
+
+        h1 {
+            font-size: 20px;
+            margin-top: 24px;
+            margin-left: 24px;
+            font-weight: 700;
+            color: #4b4b4b;
+        }
+
+        p {
+            font-size: 14px;
+            color: #b4aeae;
+            margin-top: 4px;
+            margin-left: 24px;
+        }
+
+        .container-input-share-thoughts {
+            margin-top: 8px;
+        }
+    }
+}

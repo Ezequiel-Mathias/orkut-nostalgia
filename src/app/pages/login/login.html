@@ -1,0 +1,58 @@
+<app-header />
+
+<main>
+
+    <section class="login-container">
+
+        <div class="container-carrossel-images">
+
+        </div>
+
+        <div class="container-form-login">
+            <div class="container-circle-login">
+                <img src="/assets/circle.svg" alt="circle">
+                <span>Acesse o Orkut</span>
+            </div>
+
+            <div class="container-form">
+
+                <form action="">
+
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="email@email.com" formControlName="email">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="password">Senha</label>
+                        <input type="password" placeholder="Senha">
+                    </div>
+
+                    <div class="container-checkbox">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Lembrar minha senha</label>
+                    </div>
+
+                    <div class="container-button-pink">
+                        <span>Entrar na conta</span>
+                    </div>
+
+                    <div class="container-translucent-button">
+                        <span>Criar uma conta</span>
+                    </div>
+
+                    <div class="container-separator">
+                        <span (click)="navigateToForgotPassword()">Esqueci a minha senha</span>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<app-footer></app-footer>

@@ -1,0 +1,23 @@
+<header>
+    @if(notLoggedIn){
+    <nav>
+        <div>
+            <img src="/assets/logo.svg" alt="Logo Orkut" (click)="navigateToHome()">
+        </div>
+        <ul>
+            <li>Sobre o Orkut</li>
+            <li>Centro de segurança</li>
+        </ul>
+    </nav>
+    }@else {
+    <nav>
+        <div>
+            <img src="/assets/logo.svg" alt="Logo Orkut" (click)="navigateToHome()">
+        </div>
+        <ul>
+            <li>Sobre o Orkut</li>
+            <li>Centro de segurança</li>
+        </ul>
+    </nav>
+    }
+</header>
