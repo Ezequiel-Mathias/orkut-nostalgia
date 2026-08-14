@@ -2,19 +2,16 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 24px;
     padding-top: 64px;
 
     .container-share-thoughts {
         background-color: #fdfeff;
         width: 595px;
-        height: 242px;
         border-radius: 16px;
-
+        padding: 24px;
         h1 {
             font-size: 20px;
-            margin-top: 24px;
-            margin-left: 24px;
             font-weight: 700;
             color: #4b4b4b;
         }
@@ -23,11 +20,76 @@
             font-size: 14px;
             color: #b4aeae;
             margin-top: 4px;
-            margin-left: 24px;
         }
 
         .container-input-share-thoughts {
-            margin-top: 8px;
+            margin-top: 16px;
         }
+
+        .container-button-share-thoughts {
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .container-button-pink {
+                width: 90px;
+                height: 25px;
+                font-size: 14px;
+            }
+
+            span {
+                font-size: 12px;
+                color: #b4aeae;
+            }
+        }
+    }
+
+    .profile-information {
+        width: 280px;
+        height: 190px;
+        background-color: #fdfeff;
+        border-radius: 16px;
+        padding: 16px;
+
+        .container-personal-data {
+            margin-bottom: 16px;
+            display: flex;
+            flex-direction: column;
+            .location {
+                margin-top: 4px;
+                font-size: 14px;
+                color: #b4aeae;
+            }
+        }
+
+        .container-profile-picture {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 8px;
+
+            .title {
+                font-size: 12px;
+                color: #b4aeae;
+            }
+
+            .number {
+                font-size: 12px;
+                color: #4B4B4B;
+            }
+        }
+
+        .container-translucent-button-small {
+            margin-top: 24px;
+            font-size: 13px;
+        }
+    }
+}
+
+.section-recent-thoughts {
+
+    .title-recent-thoughts{
+        
     }
 }

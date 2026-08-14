@@ -1,17 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap");
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
-
-main{
-    background-color: #D9E6F7;
+main {
+    background-color: #d9e6f7;
     width: 100%;
     height: 100vh;
 }
@@ -33,9 +32,9 @@ main{
         padding: 0 16px;
 
         background: #f0f4f8;
-        color: #4B4B4B;
+        color: #4b4b4b;
 
-        border: 1px solid #D9D9D9;
+        border: 1px solid #d9d9d9;
         border-radius: 10px;
         outline: none;
 
@@ -45,7 +44,9 @@ main{
 
         box-sizing: border-box;
 
-        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        transition:
+            border-color 0.2s ease,
+            box-shadow 0.2s ease;
 
         &::placeholder {
             color: #8c8c8c;
@@ -65,13 +66,36 @@ main{
 
     textarea {
         height: auto;
+        border-radius: 16px;
         min-height: 100px;
         padding: 16px;
         resize: vertical;
+
+        // Largura do scroll
+        &::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        // Fundo/trilho do scroll
+        &::-webkit-scrollbar-track {
+            background: transparent;
+            margin: 10px 0;
+        }
+
+        // Barra do scroll
+        &::-webkit-scrollbar-thumb {
+            background: #ED2590;
+            border-radius: 10px;
+        }
+
+        // Hover
+        &::-webkit-scrollbar-thumb:hover {
+            background: #999;
+        }
     }
 }
 
-.container-checkbox{
+.container-checkbox {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -125,27 +149,40 @@ main{
     }
 }
 
-.container-button-pink{
-    width: 100%;    
+.container-button-pink {
+    width: 100%;
     height: 47px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ED2590;
+    background-color: #ed2590;
     color: white;
     cursor: pointer;
     border-radius: 20px;
 }
 
-.container-translucent-button{
-    width: 100%;    
+.container-translucent-button {
+    width: 100%;
     height: 47px;
     margin-top: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #EFF3F8;
-    color: #ED2590;
+    background-color: #eff3f8;
+    color: #ed2590;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.container-translucent-button-small {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #ed2590;
+    color: #ed2590;
     cursor: pointer;
     border-radius: 20px;
 }
