@@ -1,4 +1,4 @@
-<app-header [notLoggedIn]="true"></app-header>
+<app-header [notLoggedIn]="false"></app-header>
 
 <main>
 
@@ -27,21 +27,37 @@
             <span class="title-recent-thoughts">PENSAMENTOS RECENTES</span>
 
             <div class="container-card-thoughts">
+
                 <div class="container-personal-data">
                     <div class="face">
 
                     </div>
                     <div class="data">
-                        <span>Ezequiel</span>
-                        <span>Jandira-SP</span>
+                        <span class="name">Ezequiel</span>
+                        <span class="location">Jandira-SP</span>
                     </div>
                 </div>
+
+                <div class="container-thought">
+                    <p>Alguém mais sente saudade de escrever recado no perfil dos amigos? Volta, 2007. Isso por que em
+                        2007 tudo era bem legal e bonito, depois foi ficando mó zona, falo mesmo</p>
+                </div>
+
+                <hr>
+
+                <div class="container-like">
+                    <div class="like-icon">
+                        <img src="/assets/heart.svg" alt="like">
+                        <span>6000</span>
+                    </div>
+                </div>
+
             </div>
 
         </div>
 
-
         <div class="profile-information">
+
             <div class="container-personal-data">
                 <span class="name">Ezequiel Mathias</span>
                 <span class="location">Jandira-SP</span>
@@ -61,12 +77,6 @@
                 <span>Ver meu perfil</span>
             </div>
         </div>
-
-    </section>
-
-    <section class="section-recent-thoughts">
-
-
 
     </section>
 

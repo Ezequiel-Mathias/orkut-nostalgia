@@ -1,25 +1,95 @@
-header{
+header {
     background-color: white;
     width: 100%;
-    
-    img{
+
+    img {
         cursor: pointer;
     }
-    nav{
+    .container-header-not-logged-in {
         display: flex;
         justify-content: space-around;
         align-items: center;
         padding: 10px 0;
 
-        ul{
+        ul {
             display: flex;
             gap: 12px;
 
-            li{
+            li {
                 list-style: none;
-                color: #4B4B4B;
+                color: #4b4b4b;
+            }
+        }
+    }
+
+    .container-header-logged-in {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 0;
+
+        .container-logo-and-infos {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+
+            span {
+                color: #4b4b4b;
+                cursor: pointer;
+            }
+
+            .selected {
+                color: #ed2590;
+            }
+        }
+
+        .container-search-and-info-perfil {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            .container-search {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #eff3f8;
+                width: 300px;
+                height: 40px;
+                gap: 8px;
+                border-radius: 8px;
+                padding-left: 8px;
+                padding-right: 8px;
+
+                input {
+                    border: none;
+                    outline: none;
+                    background-color: transparent;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                img {
+                    width: 22px;
+                }
+            }
+
+            .info-perfil {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+
+                .face {
+                    width: 41px;
+                    height: 41px;
+                    background-color: #ffeaf3;
+                    border-radius: 100%;
+                }
+
+                span{
+                    color: #4B4B4B;
+                }
+
             }
         }
     }
 }
-

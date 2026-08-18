@@ -15,8 +15,13 @@ export class Header {
     this.router = router;
   }
 
-  navigateToHome(){
-    this.router.navigateByUrl('/login');
+  navigateToHome(route?: string){
+
+    if(route){
+      this.router.navigateByUrl(route);
+    }else{
+      this.router.navigateByUrl('/login');
+    }
   }
   
 }

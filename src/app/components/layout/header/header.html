@@ -1,6 +1,8 @@
 <header>
+
     @if(notLoggedIn){
-    <nav>
+
+    <nav class="container-header-not-logged-in">
         <div>
             <img src="/assets/logo.svg" alt="Logo Orkut" (click)="navigateToHome()">
         </div>
@@ -9,15 +11,32 @@
             <li>Centro de segurança</li>
         </ul>
     </nav>
+
     }@else {
-    <nav>
-        <div>
-            <img src="/assets/logo.svg" alt="Logo Orkut" (click)="navigateToHome()">
+
+    <nav class="container-header-logged-in">
+
+        <div class="container-logo-and-infos">
+            <img src="/assets/logo.svg" alt="Logo Orkut" (click)="navigateToHome('login')">
+            <span (click)="navigateToHome('profile')">Perfil</span>
+            <span class="selected" (click)="navigateToHome('home')">Início</span>
         </div>
-        <ul>
-            <li>Sobre o Orkut</li>
-            <li>Centro de segurança</li>
-        </ul>
+
+
+        <div class="container-search-and-info-perfil">
+            <div class="container-search">
+                <img src="/assets/search.svg" alt="Search">
+                <input type="text" placeholder="Pesquisar">
+            </div>
+
+            <div class="info-perfil">
+                <div class="face"></div>
+                <span>Ezequiel Mathias</span>
+            </div>
+
+        </div>
+
     </nav>
+
     }
 </header>
